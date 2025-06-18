@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
@@ -14,9 +14,12 @@ const Header = () => {
 
   return (
     <div className="w-full bg-black px-6 md:px-20 py-4 md:py-0 flex items-center justify-between relative">
-      <p className="text-yellow-300 Goldman mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold">
+      <Link
+        to="/"
+        className="!text-yellow-300 !no-underline Goldman mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold transition duration-300 hover:drop-shadow-[0_0_10px_#facc15]"
+      >
         GausejTech
-      </p>
+      </Link>
 
       {/* Desktop Nav */}
       <ul className="hidden md:flex gap-6 items-center">

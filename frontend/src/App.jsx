@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage/Home";
 import PageNotFound from "./pages/PageNotFound";
 import Signin from "./pages/SignupPage/Signin";
+import Video from "./pages/VideoPage/Video";
+import Upload from "./pages/UploadPage/Upload";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/Signin" element={<Signin />} />
+         <Route path="/Video" element={<Video />} />
+         <Route path="/Upload" element={<Upload />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

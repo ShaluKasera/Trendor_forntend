@@ -15,7 +15,7 @@ const fadeInUp = {
 const Section3 = () => {
   return (
     <div className="bg-[#f9f7e1] px-3 py-20 overflow-hidden">
-      {/* Headings */}
+     
       <motion.p
         className="font-bold text-3xl md:text-4xl lg:text-5xl Goldman text-center text-gray-800 mb-4"
         variants={fadeInUp}
@@ -39,7 +39,7 @@ const Section3 = () => {
         content and showcase your innovative ideas.
       </motion.p>
 
-      {/* Two Cards */}
+     
       <div className="flex flex-col lg:flex-row gap-10 items-center mb-20 justify-center">
         {/* Card 1 */}
         <motion.div

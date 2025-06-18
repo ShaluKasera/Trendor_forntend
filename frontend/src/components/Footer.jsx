@@ -27,21 +27,21 @@ const Footer = () => {
           variants={fadeInUp}
           custom={0.1}
         >
-          <h2 className="Goldman text-2xl md:!text-4xl mb-3">Connect</h2>
+          <p className="Goldman text-2xl md:!text-4xl mb-3">Connect</p>
           <p className="font-segoe text-sm md:text-base mb-4">
             Share your vision through engaging video content.
           </p>
-          <ul className="flex gap-4 text-2xl md:text-3xl">
-            <li className="hover:text-yellow-300 transition">
+          <ul className="flex gap-4 text-3xl md:text-4xl">
+            <li className="transition-transform duration-300 hover:-translate-y-2 hover:text-yellow-300">
               <TbBrandLinkedin />
             </li>
-            <li className="hover:text-yellow-300 transition">
+            <li className="transition-transform duration-300 hover:-translate-y-2 hover:text-yellow-300">
               <FaInstagram />
             </li>
-            <li className="hover:text-yellow-300 transition">
+            <li className="transition-transform duration-300 hover:-translate-y-2 hover:text-yellow-300">
               <FiTwitter />
             </li>
-            <li className="hover:text-yellow-300 transition">
+            <li className="transition-transform duration-300 hover:-translate-y-2 hover:text-yellow-300">
               <RiFacebookCircleLine />
             </li>
           </ul>
@@ -56,9 +56,7 @@ const Footer = () => {
           custom={0.3}
         >
           <h2 className="Goldman text-2xl md:!text-4xl mb-3">Contact Us</h2>
-          <p className="font-segoe text-sm md:text-base">
-            ceo@gausej.tech
-          </p>
+          <p className="font-segoe text-sm md:text-base">ceo@gausej.tech</p>
         </motion.div>
 
         {/* Feedback Section */}
@@ -80,6 +78,12 @@ const Footer = () => {
               placeholder="Message"
               className="px-3 py-2 rounded-md text-black resize-none h-24 input"
             ></textarea>
+            <button
+              type="submit"
+              className="bg-green-600 hover:bg-green-700 transition-all duration-300 py-2 !rounded"
+            >
+              Submit
+            </button>
           </form>
         </motion.div>
       </div>

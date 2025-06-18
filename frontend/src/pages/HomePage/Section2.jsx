@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import img1 from "/images/Product-hunt-button.png";
 import img2 from "/images/section-2.jpeg";
 
-// Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
   visible: (delay = 0) => ({
@@ -16,7 +15,7 @@ const fadeInUp = {
 const Section2 = () => {
   return (
     <div className="text-center p-3 md:p-10 bg-white overflow-hidden">
-      {/* Product Hunt Button */}
+    
       <button
         className="w-52 h-14 bg-no-repeat bg-center bg-contain mx-auto mb-10"
         style={{ backgroundImage: `url(${img1})` }}
@@ -29,7 +28,7 @@ const Section2 = () => {
         <span className="sr-only">Product Hunt</span>
       </button>
 
-      {/* Responsive Layout with Animation */}
+    
       <div className="flex flex-col-reverse lg:flex-row md:!p-10 p-2 items-center justify-center gap-10">
         {/* Left Text Content */}
         <motion.div
