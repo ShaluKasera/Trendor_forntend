@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full bg-black px-6 md:px-20 py-4 md:py-0 flex items-center justify-between relative">
+    <div className="w-full bg-black  z-50  px-6 md:px-20 py-4 md:py-0 flex items-center justify-between fixed">
       <Link
         to="/"
         className="!text-yellow-300 !no-underline Goldman mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold transition duration-300 hover:drop-shadow-[0_0_10px_#facc15]"

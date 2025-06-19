@@ -4,7 +4,7 @@ import img1 from "/images/section-2.jpeg";
 import img2 from "/images/home-section1.jpeg";
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 60 },
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,

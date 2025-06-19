@@ -4,7 +4,7 @@ import img1 from "/images/Product-hunt-button.png";
 import img2 from "/images/section-2.jpeg";
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 60 },
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
