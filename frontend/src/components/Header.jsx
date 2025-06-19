@@ -7,7 +7,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Video", path: "/Video" },
+    { name: "Videos", path: "/Video" },
     { name: "Upload", path: "/Upload" },
     { name: "Sign In", path: "/Signin" },
   ];
@@ -18,7 +18,7 @@ const Header = () => {
         to="/"
         className="!text-yellow-300 !no-underline Goldman mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold transition duration-300 hover:drop-shadow-[0_0_10px_#facc15]"
       >
-        GausejTech
+        Trendor
       </Link>
 
       {/* Desktop Nav */}

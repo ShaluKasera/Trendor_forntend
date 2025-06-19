@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "/images/section-2.jpeg";
-import img2 from "/images/home-section1.jpeg";
 import { Link } from "react-router-dom";
 
 const fadeInUp = {
@@ -14,6 +12,13 @@ const fadeInUp = {
 };
 
 const Section2 = () => {
+  const images = [
+    "https://images.unsplash.com/photo-1642726197531-86f95d494708?auto=format&fit=crop&w=1080&h=1258", 
+    "https://images.unsplash.com/photo-1678227547309-f25998d4fc86?auto=format&fit=crop&w=1080&h=1258", 
+    "https://images.unsplash.com/photo-1642132652866-6fa262d3161f?auto=format&fit=crop&w=1080&h=1258", 
+    "https://images.unsplash.com/photo-1659301254614-8d6a9d46f26a?auto=format&fit=crop&w=1080&h=1258",
+  ];
+
   return (
     <div className="px-4 container md:px-10 lg:px-24 py-20 overflow-hidden bg-white">
       {/* Heading */}
@@ -39,8 +44,9 @@ const Section2 = () => {
         Upload and share your entrepreneurial video projects with ease.
       </motion.p>
 
+      {/* First Image Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {[img1, img2].map((img, i) => (
+        {[images[0], images[1]].map((img, i) => (
           <motion.div
             key={i}
             variants={fadeInUp}
@@ -57,6 +63,7 @@ const Section2 = () => {
         ))}
       </div>
 
+      {/* First Text Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         <motion.div
           variants={fadeInUp}
@@ -81,7 +88,7 @@ const Section2 = () => {
           className="text-center md:!text-end"
         >
           <Link
-            to="/"
+            to="/upload"
             className="!no-underline !text-gray-500 border-2 px-5 py-3 hover:!text-white transition-all duration-300 hover:bg-gray-600 rounded-4xl inline-block"
           >
             Upload
@@ -89,11 +96,11 @@ const Section2 = () => {
         </motion.div>
       </div>
 
-      {/* Second Row - Images */}
+      {/* Second Image Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {[img2, img1].map((img, i) => (
+        {[images[2], images[3]].map((img, i) => (
           <motion.div
-            key={i}
+            key={i + 2}
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -108,7 +115,7 @@ const Section2 = () => {
         ))}
       </div>
 
-      {/* Second Row - Texts/Buttons */}
+      {/* Second Text Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <motion.div
           variants={fadeInUp}
@@ -133,7 +140,7 @@ const Section2 = () => {
           className="text-center md:!text-end"
         >
           <Link
-            to="/"
+            to="/share"
             className="!no-underline !text-gray-500 border-2 px-5 py-3 hover:!text-white transition-all duration-300 hover:bg-gray-600 rounded-4xl inline-block"
           >
             Share

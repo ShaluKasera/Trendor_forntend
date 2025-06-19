@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import img1 from "/images/section-2.jpeg";
-import img2 from "/images/home-section1.jpeg";
-import { motion, AnimatePresence } from "framer-motion";
 
-const images = [img1, img2];
+import { motion, AnimatePresence } from "framer-motion";
+const images = [
+  "https://images.unsplash.com/photo-1614173644825-7be93344f65e?auto=format&fit=crop&w=945&h=922", 
+  "https://images.unsplash.com/photo-1694878982234-58d53e0d1655?auto=format&fit=crop&w=656&h=640",
+  "https://images.unsplash.com/photo-1585592049275-66497dae73d4?auto=format&fit=crop&w=656&h=640",
+  "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=656,h=640,fit=crop/cdn-builder-placeholders/asset-manager/1JM7_xehCVA.jpeg?w=1366&q=70&auto=format",
+  "https://images.unsplash.com/photo-1495488170890-ee9e49ff335d?auto=format&fit=crop&w=945&h=922",
+  ""
+];
 
 const Section1 = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -26,12 +31,13 @@ const Section1 = () => {
         Explore innovative pitches, demos, podcasts and content from entrepreneurs.
       </p>
 
-      <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
+
         {images.map((img, index) => (
           <div
             key={index}
             onClick={() => setSelectedImage(img)}
-            className="overflow-hidden rounded-xl shadow-lg w-full md:w-1/2 cursor-pointer"
+            className="overflow-hidden mt-5 rounded-xl md:h-[480px] md:!w-[500px] shadow-lg   cursor-pointer"
           >
             <img
               src={img}

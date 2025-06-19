@@ -27,7 +27,7 @@ const Section5 = () => {
         
         <div
           className="w-full md:w-1/2 h-[250px] md:h-full bg-cover bg-center shadow-md"
-          style={{ backgroundImage: `url(${img1})` }}
+          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1692976001563-41fa7497d81d?auto=format&fit=crop&w=1080&h=1054)` }}
         ></div>
 
         <div className="w-full md:w-1/2 h-[250px] md:h-full bg-green-700 p-6 md:p-8 text-white flex flex-col justify-center items-center shadow-md">

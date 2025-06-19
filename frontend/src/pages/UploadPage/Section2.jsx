@@ -3,7 +3,17 @@ import React from 'react'
 const Section2 = () => {
   return (
     <div>
-      SEction2
+     <div>
+<p>
+
+</p>
+<p>
+  
+</p>
+     </div>
+     <div>
+
+     </div>
     </div>
   )
 }
